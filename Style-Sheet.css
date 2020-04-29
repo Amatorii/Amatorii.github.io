@@ -1,0 +1,60 @@
+body
+{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#Page
+{
+	position: relative;
+	width: 900px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+#Header
+{
+	border-style: solid;
+	border-color: red;
+}
+
+#Menu
+{
+	position: sticky;
+	top:0px;
+	border-style: solid;
+	background-color: #000;
+	color: #eee;
+	overflow: auto;
+	line-height: 50px;
+}
+
+#Content
+{
+	border-style: solid;
+    padding-bottom: 1000px;
+    color: white;
+}
+ul{
+
+}
+
+	ul li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+	}
+
+	ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: arial;
+		padding: 0 20px;
+	color:white;
+	}
+		ul li a:hover{
+	color:red;
+	}
