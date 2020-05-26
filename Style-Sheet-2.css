@@ -26,7 +26,8 @@
 	background-color: red;
 	color: white;
 	background-size: auto;
-	height: auto;
+  height: auto;
+  width: 100%;
   }
   
   nav

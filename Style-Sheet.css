@@ -21,9 +21,10 @@ img {
   
   #Page
   {
-	  background-color: red;
+	  background-color: white;
 	  color:white;
 	  border-style: solid;
+	  width: 100%;
   
   }
   /* Style the header */
@@ -32,13 +33,14 @@ img {
 	padding: 30px;
 	text-align: left;
 	font-size: 35px;
+	width: fit-content;
 	color: white;
   }
   
   /* Create two columns/boxes that floats next to each other */
   nav {
 	float: left;
-	width: 10%;
+	width: 15%;
 	height: 300px; /* only for demonstration, should be removed */
 	background: black;
 	color: white;
@@ -55,7 +57,7 @@ img {
 	float: left;
 	text-align: left;
 	padding: 20px;
-	width: 90%;
+	width: 85%;
 	background-color: #f1f1f1;
 	height: 300px;
   }
