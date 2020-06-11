@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function includeHTML()                                                      /* Java Script Start*/
+        {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;                                                                     /* Java Script end, I'm wondering if I can include this in the style sheet as to not copy in all my pages*/
+            }
+          }
+        };
+        </script> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style-Sheet-2.css"/>
+    <title>Hamish's Portfolio</title>
+</head>
+<body>
+    <div id="Page">
+        <header>
+            <img src="../Images/Defult.jpg" width="100%" height="500px">
+            <h1>Title Goes Here</h1>
+        </header>        
+        <div w3-include-html="../Media-Menu.html"></div>
+        <section>
+            <article>
+                <h2>Intention Statements</h2>
+                <p>I am going to create a video essay about the videogame Dark Souls 3 and its lore. 
+                    It will be mainly educational with some opinions and comedy aspects as well. I 
+                    feel that Dark Souls has a style of storytelling that is better than other games 
+                    and I hope to change people’s opinion without disregarding or insulting a game 
+                    that they love as inferior. It will be focused on how Dark Souls tells it its 
+                    lore and how, in my opinion, its style is in most ways better than how other 
+                    games tell their narrative. I will first show how Dark Souls tells its story 
+                    then compare how Dark Souls tells its story in comparison to games like Call of 
+                    Duty or The Last of Us. My contention will be that games that tell its story in a 
+                    manner such as Dark Souls are better than forcing game play and narrative as it 
+                    gives the player more freedom and satisfaction figuring it out. I decided on using 
+                    a video essay as it is the easiest way to reach my audience who already watch videos. 
+                    Throughout my essay, as I aim towards teens to young adults, I will include comedic 
+                    moments and gameplay too keep their attention and to make viewing enjoyable rather 
+                    than just a monotone information dump. I hope that people who watch my video will 
+                    have a greater understanding of the world of Dark Souls 3 and its story, and I 
+                    also hope that they begin to look at how the story is told in other games compared
+                     to Dark Souls. I don’t expect or aim for this video to be much more than a passion
+                      project and a love letter to the series. This is because most of the information
+                       regarding the lore and the theories surrounding the lore, I have gathered about 
+                       it has been already gathered by other people who I will refer too. I don’t want to
+                        take credit for all the hard work they’ve put in as that is unfair to them.</p>
+                    <p>The aim that I want to achieve with my narrative is to change people’s perspective 
+                        on how narratives are told in video games by showing how Dark Soul’s style of story
+                         telling is better than most conventional story telling in video games. To start I 
+                         will give a general introduction to story telling by comparing Movies, Books and 
+                         Video Games and how they have their own ways of telling a narrative. I will then 
+                         list some examples of games that have really good narratives but have flaws in 
+                         their forced gameplay which leads to frustration. I’ll then clarify by point out 
+                         that while these games are good at telling stories, they suffer as they force the 
+                         player to play the games story instead of the story the player may want to play. To 
+                         give an example of a game that doesn’t use this style of forced gameplay I’ll look 
+                         at the Dark Souls franchise. I’ll point out the parts that do have some force gameplay 
+                         but point out that it’s beneficial to its story instead of detrimental. I’ll also 
+                         highlight the fact that the narrative isn’t even important to the actual playthrough. 
+                         As the narrative can be confusing and people may think a game with no narrative is 
+                         better than one with a narrative, I’ll outline the general story and an example of a 
+                         side plot so the audience can get a general outline of the story. After I have finished 
+                         showing how Dark Souls tells its story, I’ll contrast that with Skyrim and Metal Gear. 
+                         I’m specifically using these series as Metal Gear is notorious for having absurdly long 
+                         cutscenes(it hold the record for longest cutscenes in a game and longest single cut scene) 
+                         and Skyrim because it’s dialog is often inorganic and mechanical which can detract and it 
+                         forces the player to sit through all of it without being able to do much. To finish I’ll 
+                         state my contention that video games are better off having a hands-off approach than 
+                         forcing the player to make certain actions. </p>
+                         <p>[Engagement Strats]
+                             Mise En Scene
+                             Editting
+                             Audio
+                             Printed Lanugage
+                             3 act structure
+                         </p>
+                         <p>My media product will be targeted towards teens to adults who either have played the Dark 
+                             Souls franchise either casually or frequently or haven’t and want to learn more about 
+                             Dark Souls and video game design. I hope that people who played the third instalment 
+                             will get a better idea and appreciation of the world and law of Dark Souls 3. These 
+                             games can be extremely vague and cryptic in the information they directly give to the 
+                             player and even still they won’t explain a lot about the game. There are also some key 
+                             places, characters and events which they don’t even try to explain at all which can be 
+                             very confusing as there could a fairly linear and understandable story line that may have 
+                             certain chunks missing that would give much needed context. I hope with the help of my 
+                             video people can get the foundation they need to begin piecing the world’s story together 
+                             and have other links to more videos that explain the lore more if they want to know the 
+                             complete picture. These audience members will engage with my product as they most likely 
+                             are a fan of the franchise already and want to know more. Seeing areas that they’ve played 
+                             through have more context added to them or recognising an event that they thought meant one 
+                             thing being confirmed will give them a real sense of satisfaction as it will seem like they 
+                             were seeing the world in a completely different way they hadn’t considered before. I also 
+                             want to try and use Dark Souls as a examination of how the story is told in video games, 
+                             mainly forced gameplay versus free roam and how Dark Souls does both in a way that makes the 
+                             player progress through the game almost as if they were on a rail without making the player 
+                             feel like they game is forcing them to play it in a certain way or baring them from making 
+                             certain actions. This section will be engaging for my audience outlined earlier as they will 
+                             think that a game they loved before was even better than they already thought and will give 
+                             them a real sense of pride for their enjoyment of they game. I think that posing my view point 
+                             to people who already design games for a living and those interested in design will find my 
+                             video quite thought-provoking as they will be able to take what I’ve said and use it as a lens 
+                             for looking critically at other games.</p>
+            </article>
+        </section>
+        <Footer>
+            <h4>Trinity-Student-No: 611671 | VCAA-No:18259096A | Email-School: 611671@trinity.vic.edu.au</h4>
+        </Footer>
+    </div>  
+<script>
+    includeHTML(); /*calling the JS*/
+</script> 
+</body>
+</html>
