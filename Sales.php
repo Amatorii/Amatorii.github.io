@@ -7,7 +7,7 @@
     <meta name="keywords" content="HTML5, CSS, Product, Service" />
     <meta name="author" content="Hamish Luke - 103607352"  />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Team Grotle Website - Member Page</title>
+    <title>Team Grotle Website - Sales and Product Level</title>
 </head>
 </head>
 <body class="banner">
