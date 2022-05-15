@@ -7,17 +7,17 @@
     <meta name="keywords" content="HTML5, CSS, Product, Service" />
     <meta name="author" content="Hamish Luke - 103607352"  />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Team Grotle Website - Sales and Product Level</title>
+    <title>Team Grotle Website - Report</title>
 </head>
 </head>
 <body class="banner">
 <header class="navbar">
-<?php require 'phpstuff/menu.inc.php';?>
+<?php require '../phpstuff/menu2.inc.php';?>
 <ul>
-    <li><a href="index.php">Home</a></li>
-    <li><a href="addmember.php">Member Page</a></li>
-    <li><a href="Sales.php">Sales / Product Level</a></li>
-    <li><a href="report.php">Reports</a></li>
+    <li><a href="../index.php">Home</a></li>
+    <li><a href="../Member/member.php">Member Page</a></li>
+    <li><a href="../Sales/sales.php">Sales / Product Level</a></li>
+    <li><a href="../Report/report.php">Reports</a></li>
 </ul>
 </header>
 <section class = "content">

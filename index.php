@@ -4,14 +4,14 @@
 <body class="banner">
 <?php include "phpstuff/menu.inc.php";?>
 <title>Team Grotle Website</title>
-<?php echo'<header class="navbar">
+<header class="navbar">
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="addmember.php">Member Page</a></li>
-        <li><a href="Sales.php">Sales / Product Level</a></li>
-        <li><a href="report.php">Reports</a></li>
+        <li><a href="Member/member.php">Member Page</a></li>
+        <li><a href="Sales/sales.php">Sales / Product Level</a></li>
+        <li><a href="Report/report.php">Reports</a></li>
     </ul>
-</header> ';?>
+</header>
     <main>
         <section class="home">
                 <h1>This is the index page!</h1>
