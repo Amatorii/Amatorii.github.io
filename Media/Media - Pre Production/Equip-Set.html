@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function includeHTML()                                                      /* Java Script Start*/
+        {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;                                                                     /* Java Script end, I'm wondering if I can include this in the style sheet as to not copy in all my pages*/
+            }
+          }
+        };
+        </script> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style-Sheet-2.css"/>
+    <title>Hamish's Portfolio</title>
+</head>
+<body>
+    <div id="Page">
+        <header>
+            <img src="../Images/Defult.jpg" width="100%" height="500px">
+            <h1>Equipment</h1>
+        </header>        
+        <div w3-include-html="../Media-Menu.html"></div>
+        <section>
+            <article>
+              <h2>Canon EOS</h2> <img src="../Images/Setup.JPG" width="300px" height="100%" style="float: right;">
+              <p>Best camera that was available to me. It contains a 16GB SD card and has a tripod. Lighting is mainly room lights with a desk lamp shining on a wall behind camera. </p> 
+              
+              <h2>PC Set Up</h2>
+              <p>The way I make my product. It consists of my Lenovo pc, a LG monitor, a usb splitter, a Plantronics RIG 500 headset, a mouse, a HDMI cable, a sea gate hard drive, a charger and a wifi connection. The pc will be where I edit the final product / get any other clips I can’t record via Youtube. The software I will primary use to edit my product will be Premier Pro. It’s a industry grade tool that has numinous tutorials. I also use photoshop inorder to edit specific photo's I will use in my production</p>
+              
+              <h2>PS4</h2>
+              <p>The main way I will be recording my clips. Due to my limited budget, I was not able to purchases a desktop that would be able to run the video games I wish to record. I also already had a lot of the games on the console so while it would be more convenient to only use a pc, using a ps4 will suffice. It also has a in built screen recording system, so I won’t need to install more software. I will need a controller, a copy of Skyrim, a copy of GTA 5, Dark Souls 1 and 3. </p>              
+            
+              <h2>Podcaster</h2> <img src="../Images/pod.JPG"width="200px" height="100%" style="float: right;">
+              <p>The best desk recording mic available to me. It both looks visually appealing and has decent quality.</p>
+              
+            </article>
+        </section>
+        <Footer>
+            <h4>Trinity-Student-No: 611671 | VCAA-No:18259096A | Email-School: 611671@trinity.vic.edu.au</h4>
+        </Footer>
+    </div> 
+<script>
+    includeHTML(); /*calling the JS*/
+</script> 
+</body>
+</html>

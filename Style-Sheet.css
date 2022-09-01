@@ -1,0 +1,85 @@
+img {  
+	display: block;
+	margin-left:0px;
+	margin-right:auto;
+  }
+  * {
+	box-sizing: border-box;
+  }
+  p
+  {
+	color: black;
+  }
+  
+  body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("Images/Birdie.png");
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 70px 250px 20px 250px;
+  }
+  
+  #Page
+  {
+	  background-color: white;
+	  color:white;
+	  border-style: solid;
+	  width: 100%;
+  
+  }
+  /* Style the header */
+  header {
+	background-color:black;
+	padding: 30px;
+	text-align: left;
+	font-size: 35px;
+	width: fit-content;
+	color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+	float: left;
+	width: 15%;
+	height: 300px; /* only for demonstration, should be removed */
+	background: black;
+	color: white;
+	border-style: solid;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+	list-style-type: none;
+	padding: 20px;
+  }
+  
+  article {
+	float: left;
+	text-align: left;
+	padding: 20px;
+	width: 85%;
+	background-color: #f1f1f1;
+	height: 300px;
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+	nav, article {
+	  width: 100%;
+	  height: auto;
+	}
+  }

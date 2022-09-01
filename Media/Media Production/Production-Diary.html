@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function includeHTML()                                                      /* Java Script Start*/
+        {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;                                                                     /* Java Script end, I'm wondering if I can include this in the style sheet as to not copy in all my pages*/
+            }
+          }
+        };
+        </script> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style-Sheet-2.css"/>
+    <title>Hamish's Portfolio</title>
+</head>
+<body>
+    <div id="Page">
+        <header>
+            <img src="../Images/Defult.jpg" width="100%" height="500px">
+            <h1>Production Diary</h1>
+        </header>        
+        <div w3-include-html="../Media-Menu.html"></div>
+            <section>
+            <article>
+                <h3>Thu – 2/07</h3>
+                  <p>I started production a day late but that’s alright. I did some testing with the camera and some run-throughs of my first paragraph where I’m in person. Sadly, I decided not to use any of the footage or audio recorded as I wanted to do it without the 2nd coat and with the hoodie’s sleeves pushed up to the elbows. I also changed how I was going to record the live action from me sitting in my chair talking to me standing up as I thought that I could try and use the space around me more as to make my performance seem more lively and appealing. Furthermore, I decided to hold the podcaster microphone as I thought it would add the same effect and would be engaging as usually you have the microphone on the desk or a lapel mic but holding a microphone that’s obviously meant to be placed on the table will be an subversion of expectations that will seem ridiculous and humorous.
+                  </p>
+                  <h3>Mon – 6/07</h3>
+                  <p>Been quite a while since I finally got to do more recording as I didn’t feel in the mood for the past couple of days partially due to a less than desirable sleep schedule and partially due to procrastination. Though I did manage to obtain some of the background clips I’m going to use such as, two scenes of Skyrim and cinematics of all 3 Dark Souls games to help punctuate my points. I also decided on the final iteration on my costume which is me in a white linen shirt that’s untucked and a black vest. I felt this portrayed best the kind of tone I was going for in my video, a generally formal essay with some casual aspects. Unfortunately for whatever reason despite hitting record on my camera, it didn’t capture anything. Sadly, this will mean I’ll have to record the starting scene again, but I suppose 3rd time’s the charm.
+                  </p>
+                  <h3>Wed – 8/07</h3>
+                  <p>A solid 5 hours of sleep due to my mind finally deciding to sleep at 3 in the morning prevented me from doing anything productive and another rubbish night’s sleep today is not in the same vein as ideal for how I wanted week two to go but sadly I’ve run out of time as I have to go into school next week and I want all the recoding to be done so I guess it’s time to get my grind on. I decided as I needed a shave and I didn’t want to look like I just got out of the shower I may have to do a final batch of recording tomorrow where I use the camera but for now, I’ll do all the voice over’s only. I managed to get the majority done but I decided to do some rewrites as I thought the original script didn’t punctuate my point effectively to my audience.
+                  </p> 
+                  <h3>Thu – 9/07</h3>
+                  <p>Finally managed to finish all of the voice overs and now tomorrow, I just need to finish the live action portion and get all the clips, should take me a day or two. I’ve also made some more improvisations and improvements to the script as I felt the previous script was either messy or didn’t say what I wanted to. I’ll also have to make some changes to the shot list as I’ll either need to add in or remove parts from it.
+                </p>                  
+                   
+                  <h3>Fri – 10/07</h3>
+                  <p>Maybe I should’ve learned more about my camera before using it as it seems determined to be as big of a pain as possible. Before it didn’t decide to record anything and now it needs it’s battery changed. Hopefully I can either get it’s battery charged or find another camera. I did get the intro done though so that’s a positive.
+                  </p>
+                  <h3>Sun – 12/07</h3>
+                  <p>Finally finished, I did have to use a different camera which may have been obvious but I’m glad it’s finally done. I also got a lot of the scenes I’m going to use as background footage, but I still need to record some more.
+                  </p>
+
+                  <h3>Sun – 26/08
+                  </h3>
+                  <p>Due to quality issues I needed to re-record all live action sections but thankfully it all went well. I did record one part at a different time of day as the others, but I don’t think it’ll make much of a difference.
+                  </p>
+                  <h3>Mon – 27/08
+                  </h3>
+                  <p>Finally started editing. I am quite far behind schedule, but a lot of things hindered my progress like sickness and procrastination but it’s all going well. I may actually finish my first draft tomorrow which will mean I’ll be able to show it to my media teacher and get some feedback and then do a possible reshoot or edit based off his suggestions. I’ll have the actual video done by the end of next month hopefully so everything’s going well.
+                  </p>
+                  <h3>Tue – 22/09
+                  </h3>
+                  <p>Been a while, almost a full month. I haven’t documented all the things I’ve done but I can probably remember them. I had to shift to a whole new computer which I got recently, partially due to the fact that my other school issued PC couldn’t handle a lot of the tasks I wanted it to do. Thankfully I didn’t have to start from scratch or else my moral would’ve been demolished. I will have to re edit two parts but it’s not as bad as it could be. I still need to do a lot of work which I’ll try to do by the end of the week.
+                  </p>
+
+                  <h3>Mon – 5/10
+                  </h3>
+                  <p>Term 4, here we go. I don’t think I ever mentioned how much I cringe at the live action parts as for some reason my eyes look slanted. I also need to work out how to get clips in sync. I also really hate my voice overs. I don’t know what it is. I think it’s in the same vein as people not liking how they look in photos. After salvaging my product and locating all of the videos, the only thing that’s missing is one photoshop png which should be easy to redo. Speaking of redo’s, I will need to redo around 1 minute of voice overs as what I’ve done is cut in and out different takes from different times and it all sounds really janky and off putting. I may redo some live action stuff as well and I also need to record the last part as well, I think.
+                  </p>
+                  <b></b>
+                  <p>2 hours later and I’ve made really good progress.
+                  I’ve almost finished the production, I just need to re-record one part and finish inserting the clips for another, get the intro sorted, fix the bloody audio from the discord call part, some last quality adjustments and then I’ll be finally done. I still kinda cringe at it but it can’t be helped. I’m still really proud of what I’ve done. I’ve gone from never touching Adobe Premiere in my life to making a 10 minute video that has decent editing if I do say so myself. There are some parts which I still find a bit off but for the most part, I’m really happy with it.
+                </p>
+                  
+                  <h3>Fri - 9/10
+                  </h3>
+                    <p>It’s finally done! I’ve finished all the editing and I finally have a finished product. I had to change sections of it from the final product which I’ll need to document but it’s mostly the same. It came out to be 10 minutes 52 seconds, using approximately 60 audio) and roughly 13 different editing techniques but I’ll need to double check that.
+                  I just need to finish filling out my portfolio and then I’m done.
+                  </p>
+            </article>
+        </section>
+        <Footer>
+            <h4>Trinity-Student-No: 611671 | VCAA-No:18259096A | Email-School: 611671@trinity.vic.edu.au</h4>
+        </Footer>
+    </div> 
+<script>
+    includeHTML(); /*calling the JS*/
+</script> 
+</body>
+</html>
